@@ -57,6 +57,15 @@ namespace UserMaintenance_tok4cz
                 }
             }
 
+            User torlendo = (User)listUsers.SelectedItem;
+            users.Remove(torlendo);
+
+            private void Listtorol_Click(object sender, EventArgs e)
+            {
+                User torlendo = (User)listUsers.SelectedItem;
+                users.Remove(torlendo);
+            }
+
 
         }
     }
