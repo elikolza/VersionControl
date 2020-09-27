@@ -1,0 +1,6 @@
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.Form1.resources
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.Properties.Resources.resources
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.Resource1.resources
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.csproj.CoreCompileInputs.cache
