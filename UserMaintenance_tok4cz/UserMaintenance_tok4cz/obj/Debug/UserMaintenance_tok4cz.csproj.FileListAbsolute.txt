@@ -4,3 +4,8 @@ C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenanc
 C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.Resource1.resources
 C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.csproj.GenerateResource.cache
 C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\bin\Debug\UserMaintenance_tok4cz.exe.config
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\bin\Debug\UserMaintenance_tok4cz.exe
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\bin\Debug\UserMaintenance_tok4cz.pdb
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.exe
+C:\Users\admin\source\repos\VersionControl\UserMaintenance_tok4cz\UserMaintenance_tok4cz\obj\Debug\UserMaintenance_tok4cz.pdb
