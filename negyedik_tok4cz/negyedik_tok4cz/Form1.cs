@@ -109,9 +109,40 @@ namespace negyedik_tok4cz
          GetCell(2, 1),
          GetCell(1 + values.GetLength(0), values.GetLength(1))).Value2 = values;
 
+            /*Output*/
+
+            Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+            headerRange.Font.Bold = true;
+            headerRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+            headerRange.EntireColumn.AutoFit();
+            headerRange.RowHeight = 40;
+            headerRange.Interior.Color = Color.LightBlue;
+            headerRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+            Excel.Range tableRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+            tableRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+
+            /* (Nem tudtam) 
+            
+            Excel.Range firstcRange = 
+            firstcRange.Font.Bold = true;
+            firstcRange.Interior.Color = Color.LightYellow;
+
+            int lastRowID = xlSheet.UsedRange.Rows.Count;
+
+            Excel.Range lastc =
+            lastc.Interior.Color = Color.LightGreen;
+
+
+
+
+            */
+
         }
 
-    private string GetCell(int x, int y)
+        private string GetCell(int x, int y)
     {
         string ExcelCoordinate = "";
         int dividend = y;
