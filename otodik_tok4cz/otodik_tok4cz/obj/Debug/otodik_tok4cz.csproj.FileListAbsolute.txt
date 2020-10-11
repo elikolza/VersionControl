@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\bin\Debug\otodik_tok4cz.exe.config
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\bin\Debug\otodik_tok4cz.exe
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\bin\Debug\otodik_tok4cz.pdb
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\bin\Debug\EntityFramework.dll
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\bin\Debug\EntityFramework.xml
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.Form1.resources
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.Properties.Resources.resources
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.csproj.CopyComplete
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.exe
+C:\Users\admin\source\repos\VersionControl\otodik_tok4cz\otodik_tok4cz\obj\Debug\otodik_tok4cz.pdb
