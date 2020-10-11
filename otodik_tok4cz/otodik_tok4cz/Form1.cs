@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,25 +25,6 @@ namespace otodik_tok4cz
             Ticks = context.Ticks.ToList();
             dataGridView1.DataSource = Ticks;
             CreatePortfolio();
-
-            List<decimal> Nyereségek = new List<decimal>();
-            int intervalum = 30;
-            DateTime kezdőDátum = (from x in Ticks select x.TradingDay).Min();
-            DateTime záróDátum = new DateTime(2016, 12, 30);
-            TimeSpan z = záróDátum - kezdőDátum;
-            for (int i = 0; i < z.Days - intervalum; i++)
-            {
-                decimal ny = GetPortfolioValue(kezdőDátum.AddDays(i + intervalum))
-                           - GetPortfolioValue(kezdőDátum.AddDays(i));
-                Nyereségek.Add(ny);
-                Console.WriteLine(i + " " + ny);
-            }
-
-            var nyereségekRendezve = (from x in Nyereségek
-                                      orderby x
-                                      select x)
-                                        .ToList();
-            MessageBox.Show(nyereségekRendezve[nyereségekRendezve.Count() / 5].ToString());
         }
 
         private decimal GetPortfolioValue(DateTime date)
@@ -69,6 +51,50 @@ namespace otodik_tok4cz
             dataGridView2.DataSource = Portfolio;
         }
 
+        private void saving_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Comma Seperated Values (*.csv)|*.csv";
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+            sfd.AddExtension = true;
+            sfd.Title = "save";
 
+            if (sfd.FileName != "")
+            {
+
+
+                List<decimal> Nyereségek = new List<decimal>();
+                int intervallum = 30;
+                DateTime KezdőDátum = (from x in Ticks select x.TradingDay).Min();
+                DateTime záróDátum = new DateTime(2016, 12, 30);
+                TimeSpan z = záróDátum - KezdőDátum;
+                for (int i = 0; i < z.Days - intervallum; i++)
+                {
+                    decimal ny = GetPortfolioValue(KezdőDátum.AddDays(i + intervallum))
+                                - GetPortfolioValue(KezdőDátum.AddDays(i));
+                    Nyereségek.Add(ny);
+                    Console.WriteLine(i + "" + ny);
+
+                }
+
+                var nyereségekRendezve = (from x in Nyereségek
+                                          orderby x
+                                          select x)
+                                          .ToList();
+                MessageBox.Show(nyereségekRendezve[nyereségekRendezve.Count() / 5].ToString());
+
+
+                using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+                {
+                    sw.WriteLine("Időszak; Nyereség");
+
+                    for (int i = 0; i < nyereségekRendezve.Count; i++)
+                    {
+                        sw.WriteLine(i + ";" + nyereségekRendezve[i]);
+                    }
+
+                }
+            }
+        }
     }
 }
