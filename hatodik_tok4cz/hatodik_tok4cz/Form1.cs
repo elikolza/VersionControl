@@ -55,6 +55,13 @@ namespace hatodik_tok4cz
                     rate.Value = value / unit;
             }
 
+            RefreshData();
+
+        }
+
+        private void RefreshData()
+        {
+            Rates.Clear();
             chartRateData.DataSource = Rates;
             var series = chartRateData.Series[0];
             series.ChartType = SeriesChartType.Line;
@@ -72,7 +79,20 @@ namespace hatodik_tok4cz
 
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
 
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
     }
 
 }
