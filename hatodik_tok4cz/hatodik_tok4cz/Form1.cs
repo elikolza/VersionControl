@@ -28,10 +28,14 @@ namespace hatodik_tok4cz
 
             Webservices();
 
+            /* Nem tudtam feltölteni a Currencies listát.*/
+
             /*var mnbService = new MNBArfolyamServiceSoapClient();
             var request = new GetCurrenciesRequestBody()
             {
-                
+                currencyNames = comboBox1.SelectedIndex.ToString(),
+                startDate = dateTimePicker1.Value.ToString(),
+                endDate = dateTimePicker2.Value.ToString()
             };
             var response = mnbService.GetCurrencies(request);
             var result = response.GetCurrenciesResult;*/
