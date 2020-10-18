@@ -23,22 +23,20 @@ namespace hatodik_tok4cz
         {
             InitializeComponent();
 
+            dataGridView1.DataSource = Rates;
+            comboBox1.DataSource = Currencies;
+
             Webservices();
 
-            dataGridView1.DataSource = Rates;
-
-            var mnbService = new MNBArfolyamServiceSoapClient();
+            /*var mnbService = new MNBArfolyamServiceSoapClient();
             var request = new GetCurrenciesRequestBody()
             {
                 
             };
             var response = mnbService.GetCurrencies(request);
-            var result = response.GetCurrenciesResult;
+            var result = response.GetCurrenciesResult;*/
 
             RefreshData();
-             
-            comboBox1.DataSource = Currencies;
-
         }
 
         private void Webservices()
@@ -47,7 +45,7 @@ namespace hatodik_tok4cz
 
             var request = new GetExchangeRatesRequestBody()
             {
-                currencyNames = comboBox1.SelectedItem.ToString(),
+                currencyNames = comboBox1.SelectedIndex.ToString(),
                 startDate = dateTimePicker1.Value.ToString(),
                 endDate = dateTimePicker2.Value.ToString()
             };
@@ -75,12 +73,10 @@ namespace hatodik_tok4cz
                 if (unit != 0)
                     rate.Value = value / unit;
             }
-
         }
 
         private void RefreshData()
         {
-            Rates.Clear();
             chartRateData.DataSource = Rates;
             var series = chartRateData.Series[0];
             series.ChartType = SeriesChartType.Line;
