@@ -53,7 +53,10 @@ namespace hatodik_tok4cz
                 if (unit != 0)
                     rate.Value = value / unit;
             }
+
         }
 
+
     }
+
 }
