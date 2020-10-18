@@ -1,4 +1,5 @@
-﻿using hatodik_tok4cz.MnbServiceReference;
+﻿using hatodik_tok4cz.Entities;
+using hatodik_tok4cz.MnbServiceReference;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace hatodik_tok4cz
 {
     public partial class Form1 : Form
     {
+        BindingList<RateData> Rates = new BindingList<RateData>();
 
         public Form1()
         {
@@ -29,6 +31,8 @@ namespace hatodik_tok4cz
 
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
+
+            dataGridView1.DataSource = Rates;
         }
     }
 }
