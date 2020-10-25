@@ -82,6 +82,8 @@ namespace hetedik_tok4cz
             }
         }
 
+        /*DisplayResults()*/
+
             public List<Person> GetPopulation(string csvpath)
         {
             List<Person> population = new List<Person>();
@@ -141,6 +143,25 @@ namespace hetedik_tok4cz
             return deathProbabilities;
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Szimulacio();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.ShowDialog();
+            textBox1b.Text = ofd.FileName;
+        }
+
+        /*Nem tudtam*/
+
+       /* private void DisplayResults()
+        {
+            string rich_tbox = "";
+            rich_tbox += string.Format("Év:{0} Fiuk:{1} Lányok:{2}", year, nbrOfMales, nbrOfFemales);
+            richTextBox1.Text = rich_tbox;
+        }*/
     }
 }
