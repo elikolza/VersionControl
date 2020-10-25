@@ -10,7 +10,7 @@ namespace hetedik_tok4cz.Entities
     {
         public Gender Gender { get; set; }
         public int Age { get; set; }
-        public double DthProbability { get; set; }
+        public double P { get; set; }
 
     }
 }

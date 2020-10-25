@@ -10,6 +10,6 @@ namespace hetedik_tok4cz.Entities
     {
         public int Age { get; set; }
         public int NbrOfChildren { get; set; }
-        public double BrthProbability { get; set; }
+        public double P { get; set; }
     }
 }
