@@ -1,0 +1,10 @@
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\obj\Debug\hetedik_tok4cz.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\obj\Debug\hetedik_tok4cz.Properties.Resources.resources
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\obj\Debug\hetedik_tok4cz.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\obj\Debug\hetedik_tok4cz.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\bin\Debug\hetedik_tok4cz.exe.config
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\bin\Debug\hetedik_tok4cz.exe
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\bin\Debug\hetedik_tok4cz.pdb
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\obj\Debug\hetedik_tok4cz.Form1.resources
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\obj\Debug\hetedik_tok4cz.exe
+C:\Users\admin\source\repos\VersionControl\hetedik_tok4cz\hetedik_tok4cz\obj\Debug\hetedik_tok4cz.pdb

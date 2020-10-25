@@ -27,6 +27,8 @@ namespace hetedik_tok4cz
             DeathProbabilities = GetDeathProbabilities(@"C:\Temp\halál.csv");
         }
 
+        Random rng = new Random(1234);
+
         public List<Person> GetPopulation(string csvpath)
         {
             List<Person> population = new List<Person>();
@@ -85,5 +87,7 @@ namespace hetedik_tok4cz
             }
             return deathProbabilities;
         }
+
+
     }
 }
