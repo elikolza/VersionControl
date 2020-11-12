@@ -8,3 +8,4 @@ C:\Users\admin\source\repos\VersionControl\nyolcadik_tok4cz\nyolcadik_tok4cz\bin
 C:\Users\admin\source\repos\VersionControl\nyolcadik_tok4cz\nyolcadik_tok4cz\bin\Debug\nyolcadik_tok4cz.pdb
 C:\Users\admin\source\repos\VersionControl\nyolcadik_tok4cz\nyolcadik_tok4cz\obj\Debug\nyolcadik_tok4cz.exe
 C:\Users\admin\source\repos\VersionControl\nyolcadik_tok4cz\nyolcadik_tok4cz\obj\Debug\nyolcadik_tok4cz.pdb
+C:\Users\admin\source\repos\VersionControl\nyolcadik_tok4cz\nyolcadik_tok4cz\bin\Debug\Images\car.png
