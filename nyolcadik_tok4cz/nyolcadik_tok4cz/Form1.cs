@@ -65,7 +65,10 @@ namespace nyolcadik_tok4cz
 
         private void bb_Click(object sender, EventArgs e)
         {
-            Factory = new BallFactory();
+            Factory = new BallFactory
+            {
+                BallColor = colorb.BackColor
+            };
         }
 
         private void DisplayNext()
