@@ -36,11 +36,13 @@
             this.cb = new System.Windows.Forms.Button();
             this.createTimer = new System.Windows.Forms.Timer(this.components);
             this.conveyorTimer = new System.Windows.Forms.Timer(this.components);
+            this.colorb = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.colorb);
             this.mainPanel.Controls.Add(this.lblNext);
             this.mainPanel.Controls.Add(this.pb);
             this.mainPanel.Controls.Add(this.bb);
@@ -101,6 +103,17 @@
             this.conveyorTimer.Interval = 10;
             this.conveyorTimer.Tick += new System.EventHandler(this.conveyorTimer_Tick);
             // 
+            // colorb
+            // 
+            this.colorb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.colorb.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.colorb.Location = new System.Drawing.Point(161, 105);
+            this.colorb.Name = "colorb";
+            this.colorb.Size = new System.Drawing.Size(80, 26);
+            this.colorb.TabIndex = 4;
+            this.colorb.UseVisualStyleBackColor = false;
+            this.colorb.Click += new System.EventHandler(this.colorb_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -124,6 +137,7 @@
         private System.Windows.Forms.Button pb;
         private System.Windows.Forms.Button bb;
         private System.Windows.Forms.Button cb;
+        private System.Windows.Forms.Button colorb;
     }
 }
 
