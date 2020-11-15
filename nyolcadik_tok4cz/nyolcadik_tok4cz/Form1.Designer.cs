@@ -30,18 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.colorb = new System.Windows.Forms.Button();
             this.lblNext = new System.Windows.Forms.Label();
             this.pb = new System.Windows.Forms.Button();
             this.bb = new System.Windows.Forms.Button();
             this.cb = new System.Windows.Forms.Button();
             this.createTimer = new System.Windows.Forms.Timer(this.components);
             this.conveyorTimer = new System.Windows.Forms.Timer(this.components);
-            this.colorb = new System.Windows.Forms.Button();
+            this.colorp1 = new System.Windows.Forms.Button();
+            this.colorp2 = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.colorp2);
+            this.mainPanel.Controls.Add(this.colorp1);
             this.mainPanel.Controls.Add(this.colorb);
             this.mainPanel.Controls.Add(this.lblNext);
             this.mainPanel.Controls.Add(this.pb);
@@ -52,6 +56,17 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(800, 450);
             this.mainPanel.TabIndex = 0;
+            // 
+            // colorb
+            // 
+            this.colorb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.colorb.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.colorb.Location = new System.Drawing.Point(161, 105);
+            this.colorb.Name = "colorb";
+            this.colorb.Size = new System.Drawing.Size(80, 26);
+            this.colorb.TabIndex = 4;
+            this.colorb.UseVisualStyleBackColor = false;
+            this.colorb.Click += new System.EventHandler(this.colorb_Click);
             // 
             // lblNext
             // 
@@ -103,16 +118,25 @@
             this.conveyorTimer.Interval = 10;
             this.conveyorTimer.Tick += new System.EventHandler(this.conveyorTimer_Tick);
             // 
-            // colorb
+            // colorp1
             // 
-            this.colorb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.colorb.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.colorb.Location = new System.Drawing.Point(161, 105);
-            this.colorb.Name = "colorb";
-            this.colorb.Size = new System.Drawing.Size(80, 26);
-            this.colorb.TabIndex = 4;
-            this.colorb.UseVisualStyleBackColor = false;
-            this.colorb.Click += new System.EventHandler(this.colorb_Click);
+            this.colorp1.BackColor = System.Drawing.Color.Red;
+            this.colorp1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.colorp1.Location = new System.Drawing.Point(282, 105);
+            this.colorp1.Name = "colorp1";
+            this.colorp1.Size = new System.Drawing.Size(80, 26);
+            this.colorp1.TabIndex = 5;
+            this.colorp1.UseVisualStyleBackColor = false;
+            // 
+            // colorp2
+            // 
+            this.colorp2.BackColor = System.Drawing.Color.Green;
+            this.colorp2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.colorp2.Location = new System.Drawing.Point(282, 137);
+            this.colorp2.Name = "colorp2";
+            this.colorp2.Size = new System.Drawing.Size(80, 26);
+            this.colorp2.TabIndex = 6;
+            this.colorp2.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -138,6 +162,8 @@
         private System.Windows.Forms.Button bb;
         private System.Windows.Forms.Button cb;
         private System.Windows.Forms.Button colorb;
+        private System.Windows.Forms.Button colorp2;
+        private System.Windows.Forms.Button colorp1;
     }
 }
 
